@@ -30,8 +30,8 @@
     <nav class="navbar navbar-expand-lg fixed-top bg-color-teste">
         <section class="container py-3">
             <a href="#" class="navbar-brand">
-                <img class="img-fluid" src="images/home.png" alt="Logo">
-                <span>Mi casa</span>
+                <img class="nn bb img-fluid" src="images/logo.png" alt="Logo">
+                <span> House Rental</span>
             </a>
 
             <!-- Criação do botão-->
@@ -47,11 +47,13 @@
 
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Sobre</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Projetos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Dicas</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#peixe">Dicas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#kk">Contato</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#featured-container">Houses</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#info-container">Informações</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#ll">Promoções</a></li>
+                    
+                    
 
                 </ul>
             </section>
@@ -67,8 +69,8 @@
 
     <!-- Definição do Slider-->
     <section class="container" id="slider-container">
-        <section class="carousel slide" id="slider" data-bs-interval="1000" data-bs-ride="carousel">
-            <section class="carousel-indicators">
+        <section class="carousel slide" id="slider" data-bs-interval="2000" data-bs-ride="carousel">
+            <section class="carousel-indicators vv">
 
                 <button type="button" class="active" data-bs-slide-to="0" aria-current="page" aria-label="Slide 1"
                     data-bs-target="#slider"></button>
@@ -82,46 +84,40 @@
 
             <section class="carousel-inner">
                 <section class="carousel-item active">
-                    <img src="images/hallowen1.jpg" alt="Imagem 1" class="d-block w-100">
+                    <img src="images/casa1.jpg" alt="Imagem 1" class="d-block w-100">
                     <section class="carousel-caption">
-                        <h5>Imagem 1</h5>
-                        <a href="#" class="btn btn-dark">Veja Mais</a>
+                        <h5></h5>
                     </section>
                 </section>
 
                 <section class="carousel-item">
-                    <img src="images/hallowen2.jpg" alt="Imagem 2" class="d-block w-100">
+                    <img src="images/img2.jpg" alt="Imagem 2" class="d-block w-100">
                     <section class="carousel-caption">
-                        <h5>Imagem 2</h5>
-                        <a href="#" class="btn btn-dark">Veja Mais</a>
+                        <h5></h5>
                     </section>
                 </section>
 
                 <section class="carousel-item">
-                    <img src="images/hallowen3.jpg" alt="Imagem 3" class="d-block w-100">
+                    <img src="images/img3.jpg" alt="Imagem 3" class="d-block w-100">
                     <section class="carousel-caption">
-                        <h5>Imagem 3</h5>
-                        <a href="#" class="btn btn-dark">Veja Mais</a>
+                        <h5></h5>
                     </section>
                 </section>
 
                 <section class="carousel-item">
-                    <img src="images/hallowen4.jpg" alt="Imagem 4" class="d-block w-100">
+                    <img src="images/img4.jpg" alt="Imagem 4" class="d-block w-100">
                     <section class="carousel-caption">
-                        <h5>Imagem 4</h5>
-                        <a href="#" class="btn btn-dark">Veja Mais</a>
+                        <h5></h5>
                     </section>
                 </section>
             </section>
 
             <button type="button" class="carousel-control-prev" data-bs-target="#slider" data-bs-slide="prev">
-                <i class="bi bi-arrow-counterclockwise"></i>
-
+                <i class="bi bi-arrow-left-circle-fill"></i>
             </button>
 
             <button type="button" class="carousel-control-next" data-bs-target="#slider" data-bs-slide="next">
-
-                <i class="bi bi-arrow-clockwise"></i>
+                <i class="bi bi-arrow-right-circle-fill"></i>
             </button>
         </section>
 
@@ -131,58 +127,341 @@
 
                 <!-- Início dos cards-->
                 <section class="col-3">
-                    <section class="card text-center">
-                        <i class="bi bi-cart4"></i>
+                    <section class="card text-center" id="peixe">
+                        <i class="bi bi-house-door-fill"></i>
                         <section class="card-body">
-                            <h1>Primeiro cartão</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, accusantium?</p>
-                            <a href="#" class="btn btn-dark">Veja aqui</a>
+                            <h2>Alugueis</h2>
+                            <p>Digite o valor em m²<br>do tamanho da casa que deseja alugar.</p>
+                            <a href="#" class="btn btn-dark"  data-bs-toggle="modal" data-bs-target="#Modal1">Veja aqui</a>
                         </section>
                     </section>
                 </section>
 
                 <section class="col-3">
                     <section class="card text-center">
-                        <i class="bi bi-cart4"></i>
+                        <i class="bi bi-cart-fill"></i>
                         <section class="card-body">
-                            <h1>Primeiro cartão</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, accusantium?</p>
-                            <a href="#" class="btn btn-dark">Veja aqui</a>
+                            <h2>Vendas</h2>
+                            <p>Digite o valor em m²<br> do tamanho da casa que deseja comprar.</p>
+                            <a href="#" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#Modal2">Veja aqui</a>
                         </section>
                     </section>
                 </section>
 
                 <section class="col-3">
                     <section class="card text-center">
-                        <i class="bi bi-cart4"></i>
+                        <i class="bi bi-bag-plus-fill"></i>
                         <section class="card-body">
-                            <h1>Primeiro cartão</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, accusantium?</p>
-                            <a href="#" class="btn btn-dark">Veja aqui</a>
+                            <h2>Orçamento</h2>
+                            <p>Digite o valor em m²<br> para ficar por dentro dos valores das casas que alugamos ou vendemos.</p>
+                            <a href="#" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#Modal3">Veja aqui</a>
                         </section>
                     </section>
                 </section>
 
                 <section class="col-3">
                     <section class="card text-center">
-                        <i class="bi bi-cart4"></i>
+                        <i class="bi bi-telephone-inbound-fill" id="kk"></i>
                         <section class="card-body">
-                            <h1>Primeiro cartão</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, accusantium?</p>
-                            <a href="#" class="btn btn-dark">Veja aqui</a>
+                            <h2>Contato</h2>
+                            <p>Para mais informações<br>entrem em contato conosco, <br>pelo nosso email.</p>
+                            <a href="#" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#Modal4">Veja aqui</a>
                         </section>
                     </section>
                 </section>
 
-        <!-- Final dos cards-->
+                <!-- Final dos cards-->
+            </section>
+        </section>
+    </section>
 
+    <!-- Destaques -->
+    <!-- Início do container-->
+    <section class="container" id="featured-container">
+        <section class="row">
+            <section class="col-12 col-md-4">
+                <h3 class="title text-danger"><br>NOSSAS CASAS A VENDA:</h3>
+                <p class="subtitle text-bg-danger">( CASAS DÍSPONIVEIS APENAS PARA VENDAS )</p>
+            </section>
+
+            <section class="col-12">
+                <section class="row g-4">
+
+                    <section class="imgcol-12 mar col-md-4">
+                        <H3>R$ 14.998.000,00</H3>
+                        <img src="./images/casa11.jpg" alt="Projeto 1" class="img-fluid">
+                        <section class="banner-content">
+                            <h4 class="title cor_do_texto"></h4>
+                            <p class="subtitle cor_do_novo_texto"></p>
+                        </section>
+                    </section>
+
+                    <section class="col-12 mar col-md-4">
+                        <H3>R$ 150.000,00</H3>
+                        <img src="./images/casa22.jpg" alt="Projeto 2" class="img-fluid">
+                        <section class="banner-content">
+                            <h4 class="title cor_do_texto"></h4>
+                            <p class="subtitle cor_do_novo_texto"></p>
+                        </section>
+                    </section>
+
+                    <section class="col-12 mar col-md-4">
+                        <H3>R$ 3.500.000,00</H3>
+                        <img src="./images/casa33.jpg" alt="Projeto 2" class="img-fluid">
+                        <section class="banner-content">
+                            <h4 class="title cor_do_texto"></h4>
+                            <p class="subtitle cor_do_novo_texto"></p>
+                        </section>
+                    </section>
+
+                    <section class="col-12 mar col-md-4">
+                        <H3>R$ 8.900.000,00</H3>
+                        <img src="./images/casa44.jpg" alt="Projeto 2" class="img-fluid">
+                        <section class="banner-content">
+                            <h4 class="title cor_do_texto"></h4>
+                            <p class="subtitle cor_do_novo_texto"></p>
+                        </section>
+                    </section>
+
+                    <section class="col-12 mar col-md-4">
+                        <H3>R$ 1.200.000,00</H3>
+                        <img src="./images/casa55.jpg" alt="Projeto 2" class="img-fluid">
+                        <section class="banner-content">
+                            <h4 class="title cor_do_texto"></h4>
+                            <p class="subtitle cor_do_novo_texto"></p>
+                        </section>
+                    </section>
+
+                    <section class="img4 col-12 mar col-md-4">
+                        <H3>R$ 750.000,00</H3>
+                        <img src="./images/casa66.jpg" alt="Projeto 2" class="img-fluid">
+                        <section class="banner-content">
+                            <h4></h4>
+                            <p></p>
+                        </section>
+                    </section>
+
+                      <!-- Final do container-->
+
+                        <!-- Informações -->
+    <section class="container" id="info-container">
+        <section class="col-12">
+            <h2 class="title text-danger"><li>INFORMAÇÕES</h2>
+          <h4 class="ocn">Entenda um pouco mais de como funciona nossa imobiliaria</h4>
+        </section>
+
+        <section class="row">
+            <section class="col-md-12 text-light">
+                <p><li>Bem-vindo ao nosso site de vendas e aluguéis de casas! Aqui estão algumas informações sobre as oportunidades que oferecemos:<div class="gold">
             </section>
         </section>
 
-        <!-- Bootsrap JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"
-            defer></script>
+
+        <div class="container text-center">
+            <div class="row">
+              <div class="col text-light">
+                <li>1° Temos uma ampla variedade de casas disponíveis para venda em diferentes localizações, tamanhos e estilos arquitetônicos. Você certamente encontrará a casa dos seus sonhos em nosso catálogo.<li>
+                    2° Nossas casas à venda são cuidadosamente selecionadas e passam por uma rigorosa avaliação de qualidade, garantindo que você adquira um imóvel de alto padrão.<li>
+                    3° Além das opções de compra, também oferecemos uma variedade de casas disponíveis para aluguel. Se você está procurando por uma moradia temporária ou deseja experimentar uma área antes de comprar, temos opções flexíveis para atender às suas necessidades.<li>
+                    4° Para facilitar ainda mais sua experiência, fornecemos informações detalhadas sobre cada casa, incluindo fotos, descrições e recursos adicionais, para que você possa tomar uma decisão informada.
+              </div>
+              <div class="col">
+                <img src="./images/informações.jpg" alt="">
+              </div>
+            </div>
+        </div>
+
+        <!-- Imagens de casas em promoção -->
+
+        <h3 class="title text-danger" id="ll"><li>PROMOÇÃO:</h3>
+        <p class="subtitle text-bg-danger"> ABAIXO ESTÃO AS CASAS QUE ESTÃO EM PROMOÇÕES ATÉ O FINAL DO MÊS, COM VALORES IMPERDÍVEIS!!! (CASAS DE BAIXO ATÉ ALTO PADRÃO)</p>
+
+        
+        <h4 class="ocn"><li>1° CASA</h4>
+        <p class="ocn"><li class="ocn">Bebedouro-SP<li class="ocn">Bairro: Centenário<li class="ocn">Rua: Maria das Dores<li class="ocn">3 quartos, sendo que um deles é suíte.<li class="ocn">2 banheiros<li class="ocn">Cozinha e sala imobiliada<li class="ocn">Terreno inteiro - 240m²<li class="ocn">Observação: É um bairro super tranquilo, não tem ponto de drogas.</p>
+        <h4 class="ocn">R$ 290.000,00</h4>
+        <img src="./images/casaP1.jpeg" alt="" class="img-fluid rec">
+
+        <h4 class="ocn"><li>2° CASA</h4>
+        <p class="ocn"><li class="ocn">Bebedouro-SP<li class="ocn">Bairro: Eldorado<li class="ocn">Rua: Fonseca Apena<li class="ocn">4 quartos, sendo que dois deles é suíte.<li class="ocn">3 banheiros<li class="ocn">Cozinha e sala imobiliada com móveis feitos este ano.<li class="ocn">2 terrenos - 480m²<li class="ocn">Observação: É um bairro super tranquilo, não tem ponto de drogas, tem segurança 24hrs, e câmeras em todas as esquinas.</p>
+        <h4 class="ocn">R$ 870.000,00</h4>
+        <img src="./images/casaP2.jpg" alt="" class="img-fluid rec">
+
+        <h4 class="ocn"><li class="ocn">3° CASA</h4>
+        <p class="ocn"><li class="ocn">Bebedouro-SP<li class="ocn">Bairro: Parque das Estrelas (condomínio fechado)<li class="ocn">Rua: Pereira Afonso<li class="ocn">7 quartos, sendo que quatro deles é suíte.<li class="ocn">5 banheiros<li class="ocn">Cozinha, sala e os quartos que são suítes estão mobiliados com guarda roupa e painel.<li class="ocn">4 terrenos - 960m²<li class="ocn">Observação: É dentro do condomínio, condomínio com seguranças tercerizados, trabalhando 24hrs por dia, no condomínio tem um bosque, e câmeras de segurança em todos os cantos possíveis.</p>
+        <h4 class="ocn">R$ 6.480.000,00</h4>
+        <img src="./images/casaP3.jpeg" alt="" class="img-fluidi rec">
+
+
+    <!-- Final das casas em promoção-->
+
+        
+        <!-- Nessa seção, iremos utilizar a adoção dos modais do Bootstrap -->
+
+        <section class="row">
+        <section class="col-12 col-md-6">
+            <img src="./images/halloween-pumpkin-1920x1080-13051.jpg" alt="" class="img-fluid">
+        </section>
+
+        <section class="col-12 col-md-6">
+            <img src="./images/overwatch-halloween-1920x1080-12163.jpg" alt="" class="img-fluid">
+        </section>
+    </section>
+
+    </section>
+
+    <!-- Fim do container Informações -->
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <!-- Informações -->
+    <div>
+    <section class="col-12">
+    </section>
+
+    <footer class="nathan container-fluid bg-dark-color" id="footer">
+        <section class="container">
+            <section class="row">
+                <!-- FOOTER TOP -->
+                <section class="capivara col-12" id="footer-top">
+                    <section class="row justify-content-between">
+                        <section class="col-4 ocn ">
+                            <h2>
+                             House Rental
+                            </h2>
+                        </section>
+
+                        <section class="nathan col-12 col-md-4">
+                            <p>Sobre nós:
+                                <section class="junior ocn">Nosso site de aluguel e venda de casas é altamente confiável, proporcionando uma experiência segura e transparente para nossos clientes, com uma ampla seleção de imóveis verificados e suporte dedicado em todas as etapas do processo. Confie em nós para encontrar a casa dos seus sonhos ou garantir um retorno satisfatório em seu investimento imobiliário.</p>
+                           </section></section>
+                        <section class="leao col-4" id="social-icons">
+                            <i class="bi colc bi-facebook"></i>
+                            <i class="bi colc bi-instagram"></i>
+                            <i class="bi colc bi-youtube"></i>
+                            <i class="bi colc bi-twitter"></i>
+                        </section>
+                    </section>
+                </section>
+            </div>
+
+
+                    
+
+<!-- Modal-->
+
+
+<!--modal 1-->
+
+<div class="modal fade modal-css" id="Modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel"><strong>ORÇAMENTO</strong></h1>
+          <button type="button" class=" btn btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Tamanho em m²:</label>
+              <input type="text" class="form-control" id="recipient-name">
+              <h5 class="text-secondary fst-italic">Valor do acabamento (não incluso)</h5>
+            </div>
+            <h1 class="text-success">R$<h1 id="valor">0,00</h1>
+            </h1>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-dark">Fazer o orçamento</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2 -->
+
+  <div class="modal fade modal-css" id="Modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel"><strong>ORÇAMENTO</strong></h1>
+          <button type="button" class=" btn btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Tamanho em m²:</label>
+              <input type="text" class="form-control" id="recipient-name">
+              <h5 class="text-secondary fst-italic">Valor do acabamento (não incluso)</h5>
+            </div>
+            <h1 class="text-success">R$<h1 id="valor">0,00</h1>
+            </h1>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-dark">Fazer o orçamento</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+<!-- Modal 3 -->
+
+<div class="modal fade modal-css" id="Modal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel"><strong>ORÇAMENTO</strong></h1>
+          <button type="button" class=" btn btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Tamanho em m²:</label>
+              <input type="text" class="form-control" id="recipient-name">
+              <h5 class="text-secondary fst-italic">Valor do acabamento (não incluso)</h5>
+            </div>
+            <h1 class="text-success">R$<h1 id="valor">0,00</h1>
+            </h1>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-dark">Fazer o orçamento</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 4 -->
+
+  <div class="modal fade" id="Modal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Fale conosco através do email abaixo.</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            HouseRental@gmail.com.br
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Final dos Modais -->
+
+        </section>
+    </section>
+
+    <!-- Bootsrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"
+        defer></script>
 
 </body>
 
